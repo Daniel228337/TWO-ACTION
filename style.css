@@ -1,0 +1,15 @@
+@import "./font.css";
+:root
+
+* ,* ::before, * ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Cera Pro', sans-serif;
+    line-height: 1.85;
+    background: #fff;
+
+}
