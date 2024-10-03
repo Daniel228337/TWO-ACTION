@@ -19,6 +19,119 @@ body {
     color: var(--color-text);
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-blue);
+    
+}
+
+button {
+    all: unset;
+}
+
+.button {
+    background-color: var(--color-blue);
+    border-radius: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px;
+    line-height: 1;
+    text-align: center;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .header {
-    color: var(--color-accent-bg);
+    background-color: var(--color-accent-bg);
+    padding: 31px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: block;
+}
+
+.header-logo img {
+    height: 44px;
+    margin-right: 56px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 15px;
+}
+
+.header-nav a {
+    display: block;
+    color: var(--color-text);
+    font-weight: 500;
+    padding: 14px;
+}
+
+.header-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-switcher a {
+}
+
+.header-switcher span {
+    display: block;
+    position: relative;
+    margin: 0 14px;
+    border-radius: 12px;
+    height: 24px;
+    width: 42px;
+    background-color: var(--color-blue);
+}
+
+.header-switcher span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #fff;
+    top: 2px;
+    left: 2px;
+}
+
+.header .active {
+    font-weight: 500;
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    font-size: 15px;
+    margin-left: 54px;
+    margin-right: 0;
+}
+
+.header-login img {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.header-register {
+    padding-right: 48px;
+    padding-left: 48px;
+    margin-left: 42px;
 }
