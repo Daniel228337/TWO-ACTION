@@ -27,7 +27,6 @@ h1 {
 a {
     text-decoration: none;
     color: var(--color-blue);
-    
 }
 
 button {
@@ -139,8 +138,7 @@ button {
 }
 
 /* MAIN */
-
-.home-writing {
+.home-greeting {
     background-color: var(--color-accent-bg);
     background-image: url('../img/line.png');
     background-repeat: no-repeat;
