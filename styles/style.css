@@ -30,6 +30,10 @@ h1 {
     font-size: 48px;
 }
 
+img {
+    max-width: 100%;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 16px;
@@ -45,6 +49,7 @@ button {
 }
 
 .button {
+    display: inline-block;
     background-color: var(--color-blue);
     border-radius: 16px;
     color: #fff;
@@ -154,23 +159,32 @@ button {
     background-image: url('../img/line.png');
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-size: 75%;
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 .home-greeting .container {
     display: flex;
+    align-items: flex-start;
 }
 
 .home-greeting-info h1 span {
     color: var(--color-blue);
 }
 
-.home-greeting-info > p {
+.home-greeting-info {
+    min-width: 540px;
+    margin-right: 40px;
+    flex: 0 0 540px;
+}
+
+.home-greeting-info p {
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 36px;
-    min-width: 540px;
 }
 
 .home-greeting__stat  {
@@ -243,4 +257,41 @@ button {
 
 .home-greeting__stat-item--2 p span {
     color: var(--color-orange);
+}
+
+.home-greeting-info ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.home-greeting-info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.home-greeting-info ul li:last-child {
+    margin-bottom: 0;
+}
+
+.home-greeting-info ul li span {
+    color: var(--color-blue);
+    font-weight: 500;
+}
+
+.home-greeting-info ul li img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.home-greeting-info .button {
+    padding-left: 30px;
+    padding-right: 30px;
+    /* padding: 0 30px; */
 }
