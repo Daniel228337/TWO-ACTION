@@ -9,7 +9,7 @@
     --color-blue-light: #f5fafe;
 }
 
-* ,* ::before, * ::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -28,6 +28,7 @@ h1 {
     line-height: 1.25;
     color: #000239;
     font-size: 48px;
+    position: relative;
 }
 
 img {
@@ -171,14 +172,14 @@ button {
     align-items: flex-start;
 }
 
-.home-greeting-info h1 span {
-    color: var(--color-blue);
-}
-
 .home-greeting-info {
     min-width: 540px;
     margin-right: 40px;
     flex: 0 0 540px;
+}
+
+.home-greeting-info h1 span {
+    color: var(--color-blue);
 }
 
 .home-greeting-info p {
@@ -293,5 +294,52 @@ button {
 .home-greeting-info .button {
     padding-left: 30px;
     padding-right: 30px;
-    /* padding: 0 30px; */
 }
+
+.home-greeting-label {
+    background-color: var(--color-orange);
+    color: #fff;
+    border-radius: 10px;
+    line-height: 1.71;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    padding: 5px 13px;
+}
+
+.home-greeting-info h1 .home-greeting-label {
+    top: 5px;
+    right: -5px;
+}
+
+.home-greeting-label--blue {
+    background-color: var(--color-blue);
+}
+
+.home-greeting-image {
+    position: relative;
+}
+
+.home-greeting-image .home-greeting-label {
+    left: -45px;
+    bottom: 150px;
+}   
+
+.home-greeting-image .home-greeting-label--blue {
+    right: -120px;
+    top: 40%;
+    left: auto;
+    bottom: auto;
+}
+
+.home-greeting-label img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 5px auto 3px;
+}
+
+.home-greeting-image_laptop {
+    margin-right: -100px;
+}
+  
