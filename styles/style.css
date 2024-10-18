@@ -452,3 +452,64 @@ button {
     margin-bottom: 0;
     line-height: 1.71;
 }
+
+.home-service {
+    background-color: #fafafd;
+    padding: 74px 0;
+}
+
+.home-service h4 {
+    margin-top: 0;
+    margin-bottom: 38px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.home-service-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.home-service-item {
+    padding: 30px 34px 38px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.home-service-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.home-service-item-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-blue);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-service-item-icon img {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.home-service-item-order {
+    border: 1px solid #CBCBCB33;
+    border-radius: 20px;
+    padding: 9px 19px;
+    font-size: 14px;
+    line-height: 1.38;
+}
+
+.home-service-item-order span {
+    color: var(--color-blue);
+    font-weight: 500;
+}
