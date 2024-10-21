@@ -63,6 +63,26 @@ button {
     cursor: pointer;
 }
 
+.button--block {
+    display: block;
+
+}
+
+.button--orange {
+    color: #fff;
+    background: var(--color-orange);
+}
+
+.button--orange-light {
+    color: var(--color-orange);
+    background-color: var(--color-orange-light);
+}
+
+.button--blue-light {
+    color: var(--color-blue);
+    background-color: var(--color-blue-light);
+}
+
 .container {
     max-width: 1440px;
     width: 100%;
@@ -476,6 +496,8 @@ button {
     padding: 30px 34px 38px;
     border-radius: 20px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .home-service-item-header {
@@ -512,4 +534,65 @@ button {
 .home-service-item-order span {
     color: var(--color-blue);
     font-weight: 500;
+}
+
+.home-service-item h5 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+}
+
+.home-service-item p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.69;
+}
+
+.home-service-item ul {
+    list-style: none;
+    margin-bottom: 25px;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.home-service-item ul li {
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 1.28;
+}
+
+.home-service-item ul li:last-child {
+    margin-bottom: 0;
+}
+
+.home-service-item ul li span {
+    font-weight: 500;
+    color: var(--color-blue);
+    font-size: 14px;
+}
+
+.home-service-item ul li img {
+    width: 10px;
+}
+
+.home-service-item .button {
+    margin-top: auto;
+}
+
+.home-service-item:hover {
+    box-shadow: 0px 10px 30px 0px #1D1D1D0A;
+    box-shadow: 0px 10px 50px 0px #7575750F;
+    cursor: pointer;
+}
+
+.home-service-item:hover .home-service-item-icon {
+    background: var(--color-blue);
+    box-shadow: 0px 9px 20px 0px #0062A933;
+}
+
+.home-service-item:hover .button {
+    background: var(--color-blue);
+    color: #fff;
 }
