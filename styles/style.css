@@ -596,3 +596,39 @@ button {
     background: var(--color-blue);
     color: #fff;
 }
+
+.home-service-item--orange  {
+
+}
+
+.home-service-item--orange  .home-service-item-icon {
+    border-color: var(--color-orange);
+}
+
+.home-service-item--orange .home-service-item-order span {
+    color: var(--color-orange);
+}
+
+.home-service-item--orange ul li span {
+    color: var(--color-orange);
+}
+
+.home-service-item--orange:hover .home-service-item-icon {
+    background-color: var(--color-orange);
+}
+
+.home-service-item-icon .home-service-item-icon-img-hover {
+    display: none;
+}
+
+.home-service-item:hover .home-service-item-icon .home-service-item-icon-img {
+    display: none;
+}
+
+.home-service-item:hover .home-service-item-icon .home-service-item-icon-img-hover {
+    display: block;
+} 
+
+.home-service-item--orange:hover .button {
+    background-color: var(--color-orange);
+}
