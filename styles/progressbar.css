@@ -1,0 +1,71 @@
+:root {
+    --color-blue: #0085E5;
+    --color-text: #484848;
+    --color-orange: #FFA000;
+    --color-accent-bg: #FfF4E1;
+    --color-orange-light: #fff9f0;
+    --color-blue-light: #f5fafe;
+}
+
+@property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+
+  @property --progress-value-blue {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+
+  @keyframes progress {
+    to { --progress-value: 2384; }
+   }
+
+   @keyframes progress-blue {
+    to { --progress-value-blue: 96; }
+   }
+
+
+.home-channels-item-orders-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: 
+  radial-gradient(closest-side, white 85%, transparent 87% 100%),
+  conic-gradient(var(--color-orange) calc((var(--progress-value) / 30) * 1%), #FFA00038 0);
+  animation: progress 2s 1 forwards;    
+}
+
+.home-channels-item-orders-progress::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '';
+    animation: progress 2s 1 forwards;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.home-channels-item-orders-progress--blue {
+    background: 
+  radial-gradient(closest-side, white 85%, transparent 87% 100%),
+  conic-gradient(var(--color-blue) calc(var(--progress-value-blue) * 1%), #EEF8FF 0); 
+  animation: progress-blue 2s 1 forwards; 
+}
+
+
+
+.home-channels-item-orders-progress--blue::before {
+    counter-reset: percentage var(--progress-value-blue);
+    content: counter(percentage) '%';
+    animation: progress-blue 2s 1 forwards;
+}
+
+.progress-bar {
+    visibility: hidden;
+    height:0;
+    width:0; 
+}

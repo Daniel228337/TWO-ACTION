@@ -1,4 +1,5 @@
 @import "./font.css";
+@import "./progressbar.css";
 
 :root {
     --color-blue: #0085E5;
@@ -774,8 +775,8 @@ button {
 }
 
 .home-channels-item-orders-progress {
-    flex: 0 0 33%;
-    min-width: 33%;
+    /* flex: 0 0 33%; */
+    /* min-width: 0%; */
 }
 
 .home-channels-item-clients {
@@ -784,6 +785,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .home-channels-item-clients-text p {
