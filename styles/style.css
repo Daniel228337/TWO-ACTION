@@ -774,9 +774,9 @@ button {
     background: #FFA00038;
 }
 
-.home-channels-item-orders-progress {
-    /* flex: 0 0 33%; */
-    /* min-width: 0%; */
+
+.home-channels-item-orders-progress .progress-bar, .home-channels-item-clients-progress .progress-bar  {
+    margin-left: auto;
 }
 
 .home-channels-item-clients {
@@ -785,7 +785,30 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+}
+
+.home-channels-item-orders-progress {
+    flex: 0 0 33%;
+    min-width: 33%;
+    position: relative;
+}
+
+.home-channels-item-clients-progress {
+    flex: 0 0 33%;
+    min-width: 33%;
+    position: relative;
+}
+
+.home-channels-item-clients-progress::before, .home-channels-item-orders-progress::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 54px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: #F2F2F6;
+    transform:translateY(-50%);
 }
 
 .home-channels-item-clients-text p {
@@ -793,4 +816,8 @@ button {
     font-weight: 500;    
     line-height: 1.5;
     opacity: 80%;
+}
+
+.home-channels-item-orders-progress::before {
+    border: 1px solid #0186E633;
 }
