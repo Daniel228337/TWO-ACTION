@@ -693,9 +693,9 @@ button {
 }
 
 .home-chanell-item-header img {
+    display: block;
     width: 66px;
     height: 66px;
-    display: block;
     margin-bottom: 18px;
     border-radius: 100%;
 }
@@ -721,14 +721,14 @@ button {
 }
 
 .home-channels-item-orders {
-    box-shadow: 0px 10px 30px 0px #1D1D1D0A;
-    box-shadow: 0px 10px 50px 0px #7575750F;
     border-radius: 20px;
     padding: 21px 27px 21px 36px;
     margin: 0 -4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 0px 20px 0px #00000014;
+
 }
 
 .home-channels-item-order-text {
@@ -737,11 +737,11 @@ button {
 }
 
 .home-channels-item-order-text b {
+    display: block;
     font-weight: 500;
     line-height: 1.2;
     font-size: 15px;
     margin-bottom: 7px;
-    display: block;
 }
 
 .home-channels-item-order-text ul {
@@ -787,19 +787,20 @@ button {
     justify-content: space-between;
 }
 
-.home-channels-item-orders-progress {
+.home-channels-item-clients-text p {
+    margin-bottom: 0;
+    font-weight: 500;    
+    line-height: 1.5;
+    opacity: 80%;  /* для b не должно быть */
+}
+
+.home-channels-item-orders-progress, .home-channels-item-clients-progress {
     flex: 0 0 33%;
     min-width: 33%;
     position: relative;
 }
 
-.home-channels-item-clients-progress {
-    flex: 0 0 33%;
-    min-width: 33%;
-    position: relative;
-}
-
-.home-channels-item-clients-progress::before, .home-channels-item-orders-progress::before {
+.home-channels-item-orders-progress::before, .home-channels-item-clients-progress::before {
     content: "";
     display: block;
     width: 1px;
@@ -811,13 +812,7 @@ button {
     transform:translateY(-50%);
 }
 
-.home-channels-item-clients-text p {
-    margin-bottom: 0;
-    font-weight: 500;    
-    line-height: 1.5;
-    opacity: 80%;
-}
 
 .home-channels-item-orders-progress::before {
-    border: 1px solid #0186E633;
+    background-color: #0186E633;
 }

@@ -14,15 +14,14 @@
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  background: 
-  radial-gradient(closest-side, white 85%, transparent 87% 100%),
-  conic-gradient(#FFA00038 5%, var(--color-orange) 75%);
+  background: radial-gradient(closest-side, white 87%, transparent 90% 100%),
+    conic-gradient(#FFA00038 25%,#FFA000 25%);
 }
 
 .progress-bar--blue {
   background: 
-    radial-gradient(closest-side, white 85%, transparent 80% 100%),
-    conic-gradient(#ffffff 5%, var(--color-blue) 75%); 
+    radial-gradient(closest-side, white 87%, transparent 90% 100%),
+    conic-gradient(#ffffff 0, var(--color-blue) 75%); 
 }
 
 .progress-bar::before {
