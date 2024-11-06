@@ -37,5 +37,5 @@
 .progress-bar--orange {
     background:
               radial-gradient(closest-side, var(--color-orange) 87%, transparent 90% 100%),
-              conic-gradient(rgb(236, 187, 26) 25%,#ffffff 25%);
+              conic-gradient(#FFFFFF52 25%,#ffffff 25%);
 }

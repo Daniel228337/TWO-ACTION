@@ -835,6 +835,7 @@ button {
 .home-channels-item--blue .home-channels-item-orders ul li::before {
     background-color: white;
 }
+
 .home-channels-item--blue .home-channels-item-orders ul li:last-child::before {
     background-color: #FFFFFF52;
 }
@@ -843,7 +844,7 @@ button {
     background-color: white;
 }
 
-
+/* * ---------- HOME GROUP ---------- */
 .home-channels--group {
     background-color: #FAFAFD;
 }
@@ -867,4 +868,61 @@ button {
 
 .home-channels-item--orange .home-channels-item-orders-progress::before {
     background-color: white;
+}
+
+.home-channels--group .home-channels-header a {
+    background-color: white;
+}
+/* * ---------- HOME REVIEWS ---------- */
+
+.home-reviews .container {
+}
+
+.home-reviews-item {
+    display: block;
+    width: 326px;
+    height: 390px;
+    background-color: var(--color-blue);
+    color: white;
+    border-radius: 20px;
+}
+
+.home-reviews-header {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 34px;
+}
+
+.home-reviews-rating {
+    display: flex;
+    padding-right: 88px;
+}
+
+.home-reviews-rating img {
+    width: 14px;
+    height: 14px;
+}
+
+.home-reviews-rating p {
+    padding: 0;
+    margin-bottom: 28px;
+}
+
+.home-reviews-item-label {
+    display: block;
+    width: 124px;
+    height: 26px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.home-reviews-item-info {
+    display: block;
+    padding-left: 34px;
+
+}
+
+.home-reviews-item-img {
+    padding-bottom: 18px;
 }
