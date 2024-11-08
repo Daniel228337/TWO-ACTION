@@ -894,81 +894,104 @@ button {
 .home-reviews__title h3 {
     margin-top: 0;
     margin: 0 0 48px 0;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .home-reviews__item {
-    display: block;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     border: 1px solid #CBCBCB66;
     color: var(--color-text);
-    width: 326px;
-    height: 390px;
+    padding: 30px 34px 33px;
+}
+
+.home-reviews__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
 }
 
 .home-reviews__rating {
     display: flex;
-    margin: 30px 34px 0 52px;
-    justify-content: space-between;
-    position: relative;
+    align-items: center;
 }
 
 .home-reviews__rating img {
-    content: "";
     display: block;
     width: 14px;
     height: 14px;
-    position: absolute;
-    left: -17px;
-    top: 6px;
+    margin-right: 4px;
 }
 
-.home-reviews__label {
-    width: 124px;
-    height: 26px;
-    border-radius: 20px;
-    background-color: var(--color-blue);
-    color: white;
-    text-align: center;
-    font-weight: 500;
+.home-reviews__rating img.home-reviews__star--active {
+    display: none;
 }
 
-.home-reviews__rating p {
+.home-reviews__rating span {
     color: var(--color-blue);
-    margin-bottom: 34px;
     line-height: 1.8;
     font-weight: 500;
     font-size: 15px;
 }
 
-.home-reviews__img {
-    display: block;
-    margin-bottom: 18px;
+.home-reviews__label {
+    border-radius: 20px;
+    background-color: var(--color-blue);
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding: 4px 26px;
+    border: 1px solid var(--color-blue);
+    font-size: 13px;
+    line-height: 1.26;
 }
 
 .home-reviews__info {
-    margin-left: 34px;
+    margin-bottom: 35px;
 }
 
-.home-reviews__name {
+.home-reviews__info img {
     display: block;
     margin-bottom: 18px;
+}
+
+.home-reviews__info p {
+    display: block;
+    line-height: 1.8;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.home-reviews__info b {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
 .home-reviews__statistics {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
-    margin-top: 30px;
+    margin-top: auto;
 }
 
 .home-reviews__statistics ul {
     display: flex;
     padding: 0;
-    margin-left: 34px;
+    margin: 0;
 }
 
 .home-reviews__statistics li {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 56px;
     height: 56px;
     color: white;
@@ -981,31 +1004,82 @@ button {
 
 .home-reviews__statistics li + li {
     border-left: 2px solid white;
-    left: -4px;
+    left: -8px;
 }
 
 .home-reviews__statistics span {
-    position: absolute;
-    top: 40%;
-    left: 33%;
+   display: block;
+   margin-top: 2px;
+   font-size: 13px;
+   line-height: 1.38;
 }
 
 .home-reviews__statistics li img {
     display: block;
     width: 10px;
     height: 10px;
-    position: absolute;
-    top: 25%;
-    left: 40%;
 }
 
 .home-reviews__statistics time {
-    position: absolute;
-    left: 60%;
-    top: 50%;
+    color: var(--color-blue);
+    padding-top: 10px;
+    line-height: 1.38;
+    display: block;
+    font-size: 13px;
+}
+
+.home-reviews__statistics .home-reviews__statistics--сircle--yellow {
+    background-color: var(--color-orange);
+}
+
+.home-reviews__item:hover {
+    background-color: var(--color-blue);
+    color: white;
+    transition: 0.3s;
+}
+
+.home-reviews__item:hover .home-reviews__rating span {
+    color: white;
+}
+
+.home-reviews__item:hover .home-reviews__label {
+    border-color: white;
+}
+
+
+.home-reviews__item:hover img.home-reviews__star--active {
+    display: block;
+}
+
+.home-reviews__item:hover img.home-reviews__star {
+    display: none;
+}
+
+.home-reviews__item:hover .time {
+    color: white;
+}
+
+.home-reviews__item:hover .home-reviews__heart {
+    display: none;
+}
+
+.home-reviews__item:hover .home-reviews__heart--active {
+    display: block;
+}
+
+.home-reviews__item:hover .home-reviews__comment {
+    display: none;
+}
+
+.home-reviews__item:hover .home-reviews__statistics li {
+    background-color: white;
+}
+
+
+.home-reviews__item:hover .home-reviews__statistics span {
     color: var(--color-blue);
 }
 
-.home-reviews__statistics .сircle--yellow {
-    background-color: var(--color-orange);
+.home-reviews__item:hover .home-reviews__statistics li + li {
+    border-left: 2px solid var(--color-blue);
 }
