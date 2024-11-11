@@ -1063,12 +1063,24 @@ button {
     display: none;
 }
 
+.home-reviews__item .home-reviews__heart--active {
+    display: none;
+}
+
 .home-reviews__item:hover .home-reviews__heart--active {
     display: block;
 }
 
 .home-reviews__item:hover .home-reviews__comment {
     display: none;
+}
+
+.home-reviews__item .home-reviews__comment--active {
+    display: none;
+}
+
+.home-reviews__item:hover .home-reviews__comment--active {
+    display: block;
 }
 
 .home-reviews__item:hover .home-reviews__statistics li {
