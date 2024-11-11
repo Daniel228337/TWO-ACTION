@@ -249,7 +249,7 @@ button {
     height: 16px;
 }
 
-.home-greetin-stat-item b {
+.home-greeting-stat-item b {
     font-weight: 500;
     font-size: 17px;
     line-height: 1.29;
@@ -879,7 +879,7 @@ button {
     padding: 74px 0 74px;
 }
 
-.home-reviews__gird {
+.home-reviews__grird {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
@@ -907,37 +907,37 @@ button {
     padding: 30px 34px 33px;
 }
 
-.home-reviews__header {
+.home-reviews-item__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 34px;
 }
 
-.home-reviews__rating {
+.home-reviews-item__rating {
     display: flex;
     align-items: center;
 }
 
-.home-reviews__rating img {
+.home-reviews-item__rating img {
     display: block;
     width: 14px;
     height: 14px;
     margin-right: 4px;
 }
 
-.home-reviews__rating img.home-reviews__star--active {
+.home-reviews-item__rating img.home-reviews-item__star--active {
     display: none;
 }
 
-.home-reviews__rating span {
+.home-reviews-item__rating span {
     color: var(--color-blue);
     line-height: 1.8;
     font-weight: 500;
     font-size: 15px;
 }
 
-.home-reviews__label {
+.home-reviews-item__label {
     border-radius: 20px;
     background-color: var(--color-blue);
     color: white;
@@ -949,23 +949,23 @@ button {
     line-height: 1.26;
 }
 
-.home-reviews__info {
+.home-reviews-item__info {
     margin-bottom: 35px;
 }
 
-.home-reviews__info img {
+.home-reviews-item__info img {
     display: block;
     margin-bottom: 18px;
 }
 
-.home-reviews__info p {
+.home-reviews-item__info p {
     display: block;
     line-height: 1.8;
     font-size: 13px;
     margin-bottom: 0;
 }
 
-.home-reviews__info b {
+.home-reviews-item__info b {
     display: block;
     margin-bottom: 18px;
     font-weight: 500;
@@ -973,7 +973,7 @@ button {
     line-height: 1.2;
 }
 
-.home-reviews__statistics {
+.home-reviews-item__statistics {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -981,13 +981,13 @@ button {
     margin-top: auto;
 }
 
-.home-reviews__statistics ul {
+.home-reviews-item__statistics ul {
     display: flex;
     padding: 0;
     margin: 0;
 }
 
-.home-reviews__statistics li {
+.home-reviews-item__statistics li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1002,25 +1002,25 @@ button {
     text-decoration: none;
 }
 
-.home-reviews__statistics li + li {
+.home-reviews-item__statistics li + li {
     border-left: 2px solid white;
     left: -8px;
 }
 
-.home-reviews__statistics span {
+.home-reviews-item__statistics span {
    display: block;
    margin-top: 2px;
    font-size: 13px;
    line-height: 1.38;
 }
 
-.home-reviews__statistics li img {
+.home-reviews-item__statistics li img {
     display: block;
     width: 10px;
     height: 10px;
 }
 
-.home-reviews__statistics time {
+.home-reviews-item__statistics time {
     color: var(--color-blue);
     padding-top: 10px;
     line-height: 1.38;
@@ -1028,7 +1028,7 @@ button {
     font-size: 13px;
 }
 
-.home-reviews__statistics .home-reviews__statistics--сircle--yellow {
+.home-reviews-item__statistics .home-reviews-item__statistics--сircle--yellow {
     background-color: var(--color-orange);
 }
 
@@ -1038,20 +1038,20 @@ button {
     transition: 0.3s;
 }
 
-.home-reviews__item:hover .home-reviews__rating span {
+.home-reviews__item:hover .home-reviews-item__rating span {
     color: white;
 }
 
-.home-reviews__item:hover .home-reviews__label {
+.home-reviews__item:hover .home-reviews-item__label {
     border-color: white;
 }
 
 
-.home-reviews__item:hover img.home-reviews__star--active {
+.home-reviews__item:hover img.home-reviews-item__star--active {
     display: block;
 }
 
-.home-reviews__item:hover img.home-reviews__star {
+.home-reviews__item:hover img.home-reviews-item__star {
     display: none;
 }
 
@@ -1059,39 +1059,50 @@ button {
     color: white;
 }
 
-.home-reviews__item:hover .home-reviews__heart {
+.home-reviews__item:hover .home-reviews-item__heart {
     display: none;
 }
 
-.home-reviews__item .home-reviews__heart--active {
+.home-reviews__item .home-reviews-item__heart--active {
     display: none;
 }
 
-.home-reviews__item:hover .home-reviews__heart--active {
+.home-reviews__item:hover .home-reviews-item__heart--active {
     display: block;
 }
 
-.home-reviews__item:hover .home-reviews__comment {
+.home-reviews__item:hover .home-reviews-item__comment {
     display: none;
 }
 
-.home-reviews__item .home-reviews__comment--active {
+.home-reviews__item .home-reviews-item__comment--active {
     display: none;
 }
 
-.home-reviews__item:hover .home-reviews__comment--active {
+.home-reviews__item:hover .home-reviews-item__comment--active {
     display: block;
 }
 
-.home-reviews__item:hover .home-reviews__statistics li {
+.home-reviews__item:hover .home-reviews-item__statistics li {
     background-color: white;
 }
 
 
-.home-reviews__item:hover .home-reviews__statistics span {
+.home-reviews__item:hover .home-reviews-item__statistics span {
     color: var(--color-blue);
 }
 
-.home-reviews__item:hover .home-reviews__statistics li + li {
+.home-reviews__item:hover .home-reviews-item__statistics li + li {
     border-left: 2px solid var(--color-blue);
+}
+
+.home-steps--with-bg .container {
+    width: 1184px;
+    height: 471px;
+}
+
+.home-steps__header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
