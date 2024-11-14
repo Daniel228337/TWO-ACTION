@@ -22,7 +22,7 @@
     font-size: 14px;
 }
 
-.progress-bar_progress {
+.progress-bar__progress {
     visibility: hidden;
     height:0;
     width:0; 
