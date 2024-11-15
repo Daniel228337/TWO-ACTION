@@ -852,7 +852,7 @@ button {
     box-shadow: none;
 }
 
-.home-channels-item--orange .home-channels-item-orders {
+.home-channels__item--orange .home-channels-item__orders {
     background-color: var(--color-orange);
     color: white;
 }
@@ -1168,9 +1168,9 @@ button {
     text-align: center;
     background-color: white;
     padding: 24px 38px 40px 38px;
-    box-shadow: 0px 1.75px 9.39px 0px #DD79001D;
-    box-shadow: 0px 14px 75px 0px #DD79003B;
     border-radius: 20px;
+    box-shadow: 0px 1.75px 9.39px 0px #DD79001D,
+    0px 14px 75px 0px #DD79003B;
 }
 
 .home-steps__item img {
@@ -1199,7 +1199,6 @@ button {
     height: 46px;
     margin-left: 39%;
 }
-
 /* ! ---------- HOME STEPS 2---------- */
 
 .home-steps--with-bg {
@@ -1207,10 +1206,10 @@ button {
 }
 
 .home-steps__item--with-bg {
-    box-shadow: 0px 10px 30px 0px #1D1D1D0A;
-    box-shadow: 0px 10px 50px 0px #7575750F;
+    box-shadow: 0px 10px 30px 0px #1D1D1D0A,
+    0px 10px 50px 0px #7575750F;
 }
-/* ! ---------- HOME JOIN 2---------- */
+/* ! ---------- HOME JOIN ---------- */
 
 .home-join {
     padding: 90px 0px 90px 0px;
@@ -1220,7 +1219,6 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 63px;
-
 }
 
 .home-join__item {
@@ -1234,12 +1232,9 @@ button {
 }
 
 .home-join__item--blue {
-    background-image: url("/img/join-2.png");
-}
-
-.home-join__item--blue {
     background-color: var(--color-blue-light);
     color: var(--color-blue);
+    background-image: url("/img/join-2.png");
 }
 
 .home-join__item h5 {
@@ -1253,7 +1248,7 @@ button {
 .home-join__item a {
     padding: 13px 49px 14px 49px;
     font-weight: 500;
-    margin-top: 43px;
+    margin-top: 35px;
 }
 
 .home-join__item img {
@@ -1264,5 +1259,31 @@ button {
 
 .home-join-item__info {
     padding: 42px 96px 43px 50px;
+}
+/* ! ---------- FOOTER ---------- */
+
+.footer {
+    background-color: var(--color-blue);
+}
+
+.footer-grid {
+    display: flex;
+}
+
+.footer-info {
+    display: flex;
+    color: white;
+    list-style-type: none;
+
+}
+
+.footer-info li {
+    list-style-type: none;
+
+}
+
+.footer-info li:nth-child(1) {
+    font-weight: 700;
+    margin-bottom: 26px;
 
 }
