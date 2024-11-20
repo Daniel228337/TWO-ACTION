@@ -1,0 +1,79 @@
+@media(max-width: 1660px) {
+    .home-greeting__image .home-greeting__label--blue {
+        right: 0;
+    }
+
+    .home-greeting-image__laptop {
+        margin-right:  0;
+    }
+}
+
+
+@media(max-width: 1439px)  {
+    .header__logo {
+        margin-right:  30px;
+    }
+
+
+    .header__login {
+        margin-left: 30px;
+    }
+
+    .header__register {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+        
+    .header__nav a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .home-greeting {
+        padding-bottom: 70px;
+    }
+
+    .home-service__item {
+        padding: 26px;
+    }
+
+    .home-service-item__order  {
+        font-size: 11px;
+    }
+
+    .home-channels-item__orders {
+        padding: 19px 26px 20px 28px;
+    }
+
+    .progress-bar {
+        width: 58px;
+        height: 58px;
+    }
+
+    .home-channels-item-order__text b, .home-channels-item-clients__text b  {
+        font-size: 13px;
+    }
+
+    .home-channels-item-order__text ul li, .home-channels-item-clients__text p {
+        font-size: 12px;
+    }
+
+    .home-reviews__item {
+        padding: 26px;
+    }
+
+    .home-reviews-item__label {
+        padding-right: 23px;
+        padding-left: 23px;
+        font-size: 12px;
+    }
+
+    .home-steps__wrap {
+        padding: 50px;
+    }
+
+    .home-steps__item {
+        font-size: 12px;
+    }
+}
+

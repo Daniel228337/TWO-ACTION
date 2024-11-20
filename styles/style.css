@@ -104,12 +104,12 @@ button {
 }
 
 .header__logo {
+    margin-right: 56px;
     display: block;
 }
 
 .header__logo img {
     height: 44px;
-    margin-right: 56px;
 }
 
 .header__nav {
@@ -517,6 +517,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 40px;
 }
 
 .home-service-item__icon img {
@@ -780,6 +781,14 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.home-channels-item-clients__text b {
+    display: block;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 15px;
+    margin-bottom: 7px;
 }
 
 .home-channels-item-clients__text p {
@@ -1097,17 +1106,11 @@ button {
 /* ! ---------- HOME STEPS ---------- */
 
 .home-steps__wrap {
-    display: flex;
-    flex-direction: column;
-    width: 1400px;
-    height: 616px;
     padding: 52px 108px 52px 108px;
     background-color: var(--color-accent-bg);  
     background-image: url("/img/steps-line.png");   
     background-repeat: no-repeat;
     background-position: center;
-    /* position: relative; */
-    /* z-index: 1; */
     border-radius: 60px;
     margin-bottom: 85px;
 }
@@ -1159,6 +1162,7 @@ button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+    margin-bottom: 46px;
 }
 
 .home-steps__item {
@@ -1288,7 +1292,7 @@ button {
 
 .footer__top {
     display: grid;
-    grid-template-columns: 22.4% 40% auto;
+    grid-template-columns: auto auto auto;
     gap: 20px;
     justify-content: space-between;
     align-items: flex-start;
@@ -1386,6 +1390,7 @@ button {
 .footer__bottom .footer__copyright {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .footer__bottom p {
@@ -1406,7 +1411,8 @@ button {
 }
 
 .footer__copyright img {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 16px;
     height: 16px;
 }
@@ -1415,8 +1421,3 @@ button {
     margin-left: 60px;
 }
 
-/* @media(min-width: 1660px) {
-    .home-greeting__image .home-greeting__label--blue {
-        right: 0;
-    }
-} */
