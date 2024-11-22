@@ -79,17 +79,58 @@
 @media(max-width: 1199px) {
     .home-greeting {
         background-position: 115% 15%;
-
+        padding-top: 30px;
     }
 
     .home-actions__wrap {
         gap: 30px;
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
 
+    .home-actions {
+        padding-top: 40px;
+        padding-bottom: 20px;
     }
 
     .home-actions__wrap h3 {
         font-size: 17px;
+    }
+
+    .home-actions__wrap {
+        margin-bottom: 40px;
+    }
+    
+    .home-service {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .home-channels {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .home-reviews {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .home-steps__wrap {
+        margin-bottom: 40px;
+    }
+
+    .home-join {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    .footer__top {
+        padding-top: 40px;
+    }
+
+    .home-steps__grid {
+        margin-bottom: 40px;
     }
 
     .home-service__wrap {
@@ -126,6 +167,12 @@
 
     .home-join__item {
         padding: 26px;
-        background-size: 180px 170px;
+        background-position: right bottom;
+        background-size: 45%;
     }
+
+    .footer__copyright {
+        max-width:40% ;
+    }
+    
 }
