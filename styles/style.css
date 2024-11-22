@@ -585,8 +585,7 @@ button {
 }
 
 .home-service__item:hover {
-    box-shadow: 0px 10px 30px 0px #1D1D1D0A;
-    box-shadow: 0px 10px 50px 0px #7575750F;
+    box-shadow: 0px 10px 30px 0px #1D1D1D0A, 0px 10px 50px 0px #7575750F;
     cursor: pointer;
 }
 
@@ -677,8 +676,7 @@ button {
 .home-channels__item {
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0px 10px 30px 0px #1D1D1D0A;
-    box-shadow: 0px 10px 50px 0px #7575750F;
+    box-shadow: 0px 10px 30px 0px #1D1D1D0A, 0px 10px 50px 0px #7575750F;
     color: var(--color-text);
 }
 
@@ -1233,6 +1231,7 @@ button {
     background-image: url("/img/join-1.png");
     background-repeat: no-repeat;
     background-position: right;
+    padding: 42px 96px 43px 50px;
 }
 
 .home-join__item--blue {
@@ -1261,9 +1260,6 @@ button {
     height: 241px;
 }
 
-.home-join-item__info {
-    padding: 42px 96px 43px 50px;
-}
 /* ! ---------- FOOTER ---------- */
 
 .footer {
