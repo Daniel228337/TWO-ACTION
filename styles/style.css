@@ -66,7 +66,6 @@ button {
 
 .button--block {
     display: block;
-
 }
 
 .button--orange {
@@ -101,6 +100,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__media {
+    display: none;
 }
 
 .header__logo {
@@ -195,6 +198,10 @@ button {
 .home-greeting .container {
     display: flex;
     align-items: flex-start;
+}
+
+.home-greeting-stat-item__icon .home-greeting-stat-item-icon__2 {
+    display: none;
 }
 
 .home-greeting__info {
@@ -1284,21 +1291,22 @@ button {
     color: white;
 }
 
-.footer__logo {
-    width: 200px;
-    height: 44px;
-    margin-bottom: 38px;
-}
-
 .footer__top {
     display: flex;
-    /* grid-template-columns: auto auto auto; */
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 68px;
 }
+
+.footer__left .footer__logo img {
+    /* display: block; */
+    width: 200px;
+    height: auto;
+    margin-bottom: 38px;
+}
+
 
 .footer__nav {
     display: flex;
@@ -1422,3 +1430,6 @@ button {
     margin-left: 60px;
 }
 
+.hide {
+    display: none !important;
+}

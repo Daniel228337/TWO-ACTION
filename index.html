@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header hide">
         <div class="container">
             <a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Two action"></a>
             <nav class="header__nav">
@@ -23,11 +23,15 @@
                 <a href="#!">Владельцу каналу</a>
             </div>
             <button class="header__login"><img src="img/greeting-header-user.svg" alt="">Войти</button>
+            <div class="header__media">
+                <img src="/img/greeting-header-user-media.svg" alt="">
+                <img src="/img/greeting-header-menu.svg" alt="">
+            </div>
             <a href="#!" class="button header__register">Приступить</a>
         </div>
     </header>
 
-    <div class="home-greeting">
+    <section class="home-greeting">
         <div class="container">
             <div class="home-greeting__info">
                 <h1>
@@ -38,24 +42,31 @@
                 <div class="home-greeting__stat">
                     <div class="home-greeting-stat__item home-greeting-stat__item--1">
                         <div class="home-greeting-stat-item__icon">
-                            <img src="img/greeting-telegram.svg" alt="">
+                            <img class="home-greeting-stat-item-icon__1" src="img/greeting-telegram.svg" alt="">
+                            <img class="home-greeting-stat-item-icon__2" src="img/greeting-telegram-media.svg" alt="">
                         </div>
-                        <b>5 324</b>
-                        <p><span>телеграм </span>каналов</p>
+                        <div class="home-greeting-stat-item__info">
+                            <b>5 324</b>
+                            <p><span>телеграм </span>каналов</p>
+                        </div>
                     </div>
                     <div class="home-greeting-stat__item home-greeting-stat__item--2">
                         <div class="home-greeting-stat-item__icon">
                             <img src="img/greeting-inst.svg" alt="">
                         </div>
-                        <b>7 182</b>
-                        <p><span>инстаграм </span>каналов</p>
+                        <div class="home-greeting-stat-item__info">
+                            <b>7 182</b>
+                            <p><span>инстаграм </span>каналов</p>
+                        </div>
                     </div>
                     <div class="home-greeting-stat__item home-greeting-stat__item--3">
                         <div class="home-greeting-stat-item__icon">
                             <img src="img/greeting-statistics.svg" alt="">
                         </div>
-                        <b>12 843 573</b>
-                        <p>суммарный <span>охват</span></p>
+                        <div class="home-greeting-stat-item__info">
+                            <b>12 843 573</b>
+                            <p>суммарный <span>охват</span></p>
+                        </div>
                     </div>
                 </div>
                 <ul>
@@ -72,7 +83,7 @@
                 <div class="home-greeting__label home-greeting__label--blue"><img src="img/greeting-icon-user.svg" alt="">+ 864</div>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="home-actions">
         <div class="container">
@@ -126,7 +137,7 @@
                 <div class="home-service__item">
                     <div class="home-service-item__header">
                         <div class="home-service-item__icon">
-                            <img class="home-service-item-icon__img--hover" src="img/service-icon-white1.png" alt="">
+                            <img class="home-service-item-icon__img--hover" src="img/service-icon-white1.svg" alt="">
                             <img class="home-service-item-icon__img" src="img/service-icon-1.svg" alt="">
                         </div>
                         <div class="home-service-item__order">Всего <span>268 846</span> заказов</div>
@@ -134,7 +145,7 @@
                     <h5>Накрутка подписчиков</h5>
                     <p>Огромный прирост подписанной аудитории в вашей группе Telegram или аккаунте Instagram</p>
                     <ul>
-                        <li><img src="img/service-icon-user.png" alt=""> <span>1 000</span> подписчиков ~ <span>150 ₽</span></li>
+                        <li><img src="img/service-icon-user.svg" alt=""> <span>1 000</span> подписчиков ~ <span>150 ₽</span></li>
                     </ul>
                     <a href="#!" class="button button--block button--blue-light">Оформить заказ</a>
                 </div>
@@ -142,16 +153,16 @@
                 <div class="home-service__item home-service__item--orange">
                     <div class="home-service-item__header">
                         <div class="home-service-item__icon">
-                            <img class="home-service-item-icon__img" src="img/service-icon-2.png" alt="">
-                            <img class="home-service-item-icon__img--hover" src="img/service-icon-white2.png" alt="">
+                            <img class="home-service-item-icon__img" src="img/service-icon-2.svg" alt="">
+                            <img class="home-service-item-icon__img--hover" src="img/service-icon-white2.svg" alt="">
                         </div>
                         <div class="home-service-item__order">Всего <span>268 846</span> заказов</div>
                     </div>
                     <h5>Активность в пабликах</h5>
                     <p>Поспособствуем приросту лайков и комментариев в вашей группе Telegram или аккаунте Instagram</p>
                     <ul>
-                        <li><img src="img/service-icon-heart.png" alt=""> <span>5 000</span> лайков ~ <span>400 ₽</span></li>
-                        <li><img src="img/service-icon-comment.png" alt=""> <span>50</span> комментариев ~ <span>350 ₽</span></li>
+                        <li><img src="img/service-icon-heart.svg" alt=""> <span>5 000</span> лайков ~ <span>400 ₽</span></li>
+                        <li><img src="img/service-icon-comment.svg" alt=""> <span>50</span> комментариев ~ <span>350 ₽</span></li>
                     </ul>
                     <a href="#!" class="button button--block button--orange-light">Оформить заказ</a>
                 </div>
@@ -167,7 +178,7 @@
                     <h5>За целевым действием</h5>
                     <p>Прирост охвата заинтересованной аудитории определенной записи в вашей группе Telegram или аккаунте Instagram</p>
                     <ul>
-                        <li><img src="img/service-icon-heart-blue.png" alt=""> <span>100</span> подписчиков ~ <span>550 ₽</span></li>
+                        <li><img src="img/service-icon-heart-blue.svg" alt=""> <span>100</span> подписчиков ~ <span>550 ₽</span></li>
                     </ul>
                     <a href="#!" class="button button--block button--blue-light">Оформить заказ</a>
                 </div>
@@ -175,8 +186,8 @@
                 <div class="home-service__item home-service__item--orange">
                     <div class="home-service-item__header">
                         <div class="home-service-item__icon">
-                            <img class="home-service-item-icon__img" src="img/service-icon-3.png" alt="">
-                            <img class="home-service-item-icon__img--hover" src="img/service-icon-white3.png" alt="">
+                            <img class="home-service-item-icon__img" src="img/service-icon-3.svg" alt="">
+                            <img class="home-service-item-icon__img--hover" src="img/service-icon-white3.svg" alt="">
                         </div>
                         <div class="home-service-item__order">Всего <span>268 846</span> заказов</div>
                     </div>
@@ -192,7 +203,7 @@
         <div class="container">
             <div class="home-channels__header">
                 <h3>Самые надежные каналы Telegram</h3>
-                <a href="#!"><img src="img/channels-icon-tg.png" alt="">Все каналы</a>
+                <a href="#!"><img src="img/channels-icon-tg.svg" alt="">Все каналы</a>
             </div>
             <div class="home-channels__grid">
                 <a class="home-channels__item" href="#!">
@@ -487,7 +498,7 @@
         <div class="container">
             <div class="home-channels__header">
                 <h3>Самые надежные группы Instagram</h3>
-                <a href="#!"><img src="img/gropup-icon-inst.png" alt="">Все группы</a>
+                <a href="#!"><img src="img/group-icon-inst.svg" alt="">Все группы</a>
             </div>
             <div class="home-channels__grid">
                 <a class="home-channels__item" href="#!">

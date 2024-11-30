@@ -8,7 +8,6 @@
     }
 }
 
-
 @media(max-width: 1439px)  {
     .header__logo {
         margin-right:  30px;
@@ -171,8 +170,315 @@
         background-size: 45%;
     }
 
-    .footer__copyright {
+    .footer__bottom .footer__copyright {
+        /* margin-top: 44px; */
+        align-items: flex-start;
         max-width:40% ;
     }
+
+    .footer__copyright img {
+        margin-top: 4px;
+    }
+
+    .header__switcher {
+        display: none;
+    }
     
+}
+
+@media(max-width: 991px) {
+    .header__nav, .header__login, .header__register {
+        display: none;
+    }
+
+    .home-greeting-image__laptop img, .home-greeting__info h1 .home-greeting__label, .home-greeting__image .home-greeting__label--blue, .home-greeting__image .home-greeting__label {
+        display: none;
+    }
+
+    .home-greeting__image {
+        display: none;
+    }
+
+    .home-greeting {
+        background-image: url('../img/greeting-line-media.svg');
+        background-position: top left;
+        background-size: 100%;
+    }
+
+    .home-greeting__info ul {
+        font-size: 12px;
+    }
+
+    .home-greeting-stat__item b {
+        margin-right: 60%;
+    }
+
+    .home-greeting-stat__item:nth-child(3) b {
+        margin-right: 30px;
+    }
+
+
+    .header__media {
+        display: flex;
+        gap: 14px;
+    }
+
+    .header__media img {
+        width: 25px;
+    }
+
+    .home-greeting__stat {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .home-greeting-stat-item__icon {
+        background-color: var(--color-blue-light);
+        margin: 0;
+        margin-right: 18px;
+    }
+
+    .home-greeting-stat-item__icon .home-greeting-stat-item-icon__1 {
+        display: none;
+    }
+
+    .home-greeting-stat-item__icon .home-greeting-stat-item-icon__2 {
+        display: block;
+    }
+
+    .home-greeting-stat__item {
+        flex-direction: row;
+        padding: 12px 0 12px 14px;
+    }
+
+    .home-actions__item h3 {
+        font-size: 16px;
+    }
+
+    .home-actions__wrap .home-actions__item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .home-actions-item__info p {
+        max-width: 60%;
+    }
+
+    .home-actions-item__img img {
+        display: block;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        bottom: 10%;
+        left: 65%;
+    }
+
+    .home-join__item a {
+        padding: 10px 25px 10px 25px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .home-actions__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home-actions__item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-actions-item__img img {
+        left: 60%;
+        bottom: 15%;
+    }
+
+    .home-actions__features {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home-service__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-channels__header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home-channels__header h3 {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 22px;
+    }
+
+    .home-channels__header a {
+        max-width: 150px;
+    }
+
+    .home-channels__grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-reviews__grird {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-steps__header h5 {
+        font-size: 18px;
+    }
+
+    .home-steps__grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-steps__wrap {
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .home-steps__wrap .button {
+        display: block;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .home-join__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-join__item h5 {
+        max-width: 100%;
+        margin-bottom: 146px;
+    }
+
+    .home-steps__fire p {
+        /* max-width: 70%; */
+    }
+
+    .home-join__item  {
+        display: flex;
+        border-radius: 14px;
+        background-position: center;
+        padding: 26px;
+        background-size: 70%;
+    }
+
+    .home-join__item a {
+        margin: 0;
+        text-align: center;
+        padding: 13px 77px 13px 77px;
+    }
+
+    .footer__top {
+        flex-direction: column;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__contacts {
+        flex-direction: column;
+    }
+
+    .footer__contacts ul:last-child {
+        padding: 0;
+        margin: 0;
+        margin-top: 22px;
+    }
+
+    .footer__contacts ul:last-child::before {
+        width: 55px;
+        height: 1px;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer__bottom .footer__copyright {
+        max-width: 100%;
+    }
+
+    .footer__bottom .footer__rules {
+        flex-direction: column;
+    }
+
+    .footer__bottom .footer__rules a {
+        margin: 0;
+    }
+
+}
+
+@media(max-width: 560px) {
+    .home-greeting-stat__item b {
+        font-size: 14px;
+    }
+
+    .home-greeting-stat__item p {
+        font-size: 11px;
+    }
+
+    .home-greeting__info {
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+     .home-greeting__info h1 {
+        font-size: 26px;
+        /* max-width: 60%; */
+    }
+
+    .home-greeting__info p {
+        /* max-width: 60%; */
+        padding-right : 18px;
+        font-size: 12px;
+    }
+
+    .home-greeting-stat__item  {
+        max-width: 90%;
+    }
+
+    .home-greeting {
+        background-image: url('../img/greeting-line-media.svg');
+        background-position: center center;
+        background-size: 100%;
+    } 
+
+    .home-greeting__info ul {
+        max-width: 60%;
+        font-size: 12px;
+    }
+
+    .home-steps__header {
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+    }
+}
+
+@media(max-width: 420px) {
+     .header__logo img {
+        width: 122px;
+        height: 28px;
+    } 
+
+     .header__media img {
+        width: 18px;
+        height: 18px;
+    }
 }
