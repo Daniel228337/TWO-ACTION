@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
-    <header class="header hide">
+    <header class="header">
         <div class="container">
             <a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Two action"></a>
+            <a href="index.html" class="mobile-header__logo"><img src="img/mobile-header-logo.png" alt="Two action"></a>
             <nav class="header__nav">
                 <a href="#!">Услуги</a>
                 <a href="#!">Рекламодателю</a>
@@ -23,7 +24,7 @@
                 <a href="#!">Владельцу каналу</a>
             </div>
             <button class="header__login"><img src="img/greeting-header-user.svg" alt="">Войти</button>
-            <div class="header__media">
+            <div class="header__mobile">
                 <img src="/img/greeting-header-user-media.svg" alt="">
                 <img src="/img/greeting-header-menu.svg" alt="">
             </div>
@@ -40,7 +41,7 @@
                 </h1>
                 <p>Продвиньте группу и повысьте активность или предоставьте площадку для рекламы и найдите своего рекламодателя</p>
                 <div class="home-greeting__stat">
-                    <div class="home-greeting-stat__item home-greeting-stat__item--1">
+                    <div class="home-greeting-stat__item home-greeting-stat__item--1 ">
                         <div class="home-greeting-stat-item__icon">
                             <img class="home-greeting-stat-item-icon__1" src="img/greeting-telegram.svg" alt="">
                             <img class="home-greeting-stat-item-icon__2" src="img/greeting-telegram-media.svg" alt="">
@@ -95,7 +96,8 @@
                         <a href="#!">Выбрать сообщество<img src="img/arrow-white.svg" alt=""></a>
                     </div>
                     <div class="home-actions-item__img">
-                        <img src="/img/actions-super.png" alt="">
+                        <img class="home-actions-img__desktop" src="/img/actions-super.png" alt="">
+                        <img class="home-actions-img__mobile" src="/img/mobile-actions-super.png" alt="">
                     </div>
                 </div>
 
@@ -106,7 +108,8 @@
                         <a href="#!">Выбрать сообщество<img src="img/arrow-blue.svg" alt=""></a>
                     </div>
                     <div class="home-actions-item__img">
-                        <img src="img/actions-pig.png" alt="">
+                        <img class="home-actions-img__desktop" src="img/actions-pig.png" alt="">
+                        <img class="home-actions-img__mobile" src="img/mobile-actions-pig.png" alt="">
                     </div>
                 </div>
             </div>
@@ -209,8 +212,10 @@
                 <a class="home-channels__item" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/channels-marvel.png" alt="">
-                        <h5>Marvel/DC</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>Marvel/DC</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
 
                     <div class="home-channels-item__orders">
@@ -244,8 +249,10 @@
                 <a class="home-channels__item" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/channels-bit.png" alt="">
-                        <h5>Crypto BIT</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>Crypto BIT</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -279,8 +286,10 @@
                 <a class="home-channels__item" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/channels-news.png" alt="">
-                        <h5>Новости | SIGEN.pro</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>Новости | SIGEN.pro</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -314,8 +323,10 @@
                 <a class="home-channels__item" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/channels-sigen.png" alt="">
-                        <h5>Media SIGEN.pro</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>Media SIGEN.pro</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -349,8 +360,10 @@
                 <a class="home-channels__item home-channels__item--blue" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/channels-marketing.png" alt="">
-                        <h5>Business marketing</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>Business marketing</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -384,8 +397,10 @@
                 <a class="home-channels__item home-channels__item--blue" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/channels-decenter.png" alt="">
-                        <h5>DeCenter</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>DeCenter</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -419,8 +434,10 @@
                 <a class="home-channels__item home-channels__item--blue" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/channels-doubletop.png" alt="">
-                        <h5>DOUBLE TOP</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>DOUBLE TOP</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -454,8 +471,10 @@
                 <a class="home-channels__item home-channels__item--blue" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/channels-ton.png" alt="">
-                        <h5>TON Community RUS</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>TON Community RUS</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -504,8 +523,10 @@
                 <a class="home-channels__item" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/group-forklog.png" alt="">
-                        <h5>ForkLog</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>ForkLog</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
 
                     <div class="home-channels-item__orders">
@@ -539,8 +560,10 @@
                 <a class="home-channels__item" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/group-umi.png" alt="">
-                        <h5>UMI Новости</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>UMI Новости</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -574,8 +597,10 @@
                 <a class="home-channels__item" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/group-farmer.png" alt="">
-                        <h5>Фармер</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>Фармер</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -609,8 +634,10 @@
                 <a class="home-channels__item" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/group-mmarker.png" alt="">
-                        <h5>MMarketMaker</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>MMarketMaker</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -644,8 +671,10 @@
                 <a class="home-channels__item home-channels__item--orange" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/group-nobel.png" alt="">
-                        <h5>Nobel</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>Nobel</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -679,8 +708,10 @@
                 <a class="home-channels__item home-channels__item--orange" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/group-ufc.png" alt="">
-                        <h5>UFC</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>UFC</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -714,8 +745,10 @@
                 <a class="home-channels__item home-channels__item--orange" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/group-nba.png" alt="">
-                        <h5>NBA. Новости</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>NBA. Новости</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -749,8 +782,10 @@
                 <a class="home-channels__item home-channels__item--orange" href="#!">
                     <div class="home-channels-item__header">
                         <img src="img/group-btr.png" alt="">
-                        <h5>BTR</h5>
-                        <p><span>1 268 846</span> подписчика</p>
+                        <div class="home-channels-item-header__button">
+                            <h5>BTR</h5>
+                            <p><span>1 268 846</span> подписчика</p>
+                        </div>
                     </div>
                     
                     <div class="home-channels-item__orders">
@@ -905,8 +940,10 @@
                     <h5>Рекламодателю</h5>
                     <div class="home-steps__fire">
                         <p>Прямо сейчас активных предложений</p>
-                        <img src="img/steps-fire.png" alt=""> 
-                        <span>37</span>
+                        <div class="home-steps-fire__wrap">
+                            <img src="img/steps-fire.png" alt="">
+                            <span>37</span>
+                        </div>
                     </div>
                 </div>
         
@@ -949,7 +986,7 @@
 
     <section class="home-steps">
         <div class="container">
-            <div class="home-steps__header home-steps--with-bg">
+            <div class="home-steps__header home-steps__header--2">
                 <h5>Площадке</h5>
             </div>
     
@@ -1017,10 +1054,10 @@
                         <img src="/img/footer-logo.png" alt="">
                     </a>
 
-                    <div class="footer__pay">
+                    <div class="footer__pay-desk">
                         <img src="/img/footer-pay.svg" alt="">
+                        <span>Платежные системы</span>
                     </div>
-                    <span>Платежные системы</span>
 
                 </div>
 
@@ -1044,6 +1081,11 @@
                     </nav>
                 </div>
 
+                <div class="footer__pay-mobile">
+                    <img src="/img/footer-pay.svg" alt="">
+                    <span>Платежные системы</span>
+                </div>
+
                 <div class="footer__contacts">
                     <ul>
                         <li>Напишите нам:</li>
@@ -1058,13 +1100,17 @@
             </div>
 
             <div class="footer__bottom">
+
                 <div class="footer__copyright">
                     <img src="/img/footer-copyright.svg" alt="">
-                    <p>TwoAction - Биржа сообществ Инстаграм и Телеграм. 2021 <span>Все права защищены</span></p>
-                    
+                    <p>TwoAction - Биржа сообществ Инстаграм и Телеграм. 2021 </p>
+                    <span class="footer__span-desk">Все права защищены</span>
                 </div>
 
+                
+
                 <div class="footer__rules">
+                    <span class="footer__span-mobile">Все права защищены</span>
                     <a href="#!">Пользовательское соглашение сервиса</a>
                     <a href="#!">Правила пользования</a>
                 </div>

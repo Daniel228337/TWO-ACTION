@@ -91,6 +91,10 @@ button {
 }
 
 /* !---------- HEADER ---------- */
+.mobile-header__logo {
+    display: none;
+}
+
 .header {
     background-color: var(--color-accent-bg);
     padding: 31px 0;
@@ -102,7 +106,7 @@ button {
     justify-content: space-between;
 }
 
-.header__media {
+.header__mobile {
     display: none;
 }
 
@@ -402,6 +406,10 @@ button {
     min-width: 226px;
 }
 
+.home-actions-item__img .home-actions-img__mobile {
+    display: none;
+}
+
 .home-actions-item__img img {
     display: block;
     width: 226px;
@@ -651,6 +659,10 @@ button {
     margin-bottom: 32px;
 }
 
+.home-channels-item-header__button {
+    text-align: center;
+}
+
 .home-channels__header h3 {
     margin: 0;
     line-height: 1.3;
@@ -672,6 +684,10 @@ button {
     width: 14px;
     height: 14px;
     display: block;
+}
+
+.home-channels-item-clients__text {
+    text-align: start;
 }
 
 .home-channels__grid {
@@ -838,6 +854,7 @@ button {
 .home-channels__item--blue {
     box-shadow: none;
     border-radius: 6px;
+    border: 1px solid #0186E633;
 }
 
 .home-channels__item--blue .home-channels-item__orders {
@@ -1114,9 +1131,14 @@ button {
 }
 /* ! ---------- HOME STEPS ---------- */
 
+
+.home-steps--with-bg {
+    
+}
+
 .home-steps__wrap {
-    padding: 52px 108px 52px 108px;
     background-color: var(--color-accent-bg);  
+    padding: 52px 108px 52px 108px;
     background-image: url("/img/steps-line.png");   
     background-repeat: no-repeat;
     background-position: center;
@@ -1156,6 +1178,7 @@ button {
     display: block;
     width: 50px;
     height: 50px;
+    position: relative;
 }
 
 .home-steps__fire span {
@@ -1307,6 +1330,9 @@ button {
     margin-bottom: 38px;
 }
 
+.footer__pay-mobile {
+    display: none;
+}
 
 .footer__nav {
     display: flex;
@@ -1409,6 +1435,10 @@ button {
 
 .footer__bottom span {
     opacity:80%;
+}
+
+.footer__span-mobile {
+    display: none;
 }
 
 .footer__copyrigh p {
