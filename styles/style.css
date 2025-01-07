@@ -1130,12 +1130,6 @@ button {
     border-left: 2px solid var(--color-blue);
 }
 /* ! ---------- HOME STEPS ---------- */
-
-
-.home-steps--with-bg {
-    
-}
-
 .home-steps__wrap {
     background-color: var(--color-accent-bg);  
     padding: 52px 108px 52px 108px;
@@ -1162,7 +1156,6 @@ button {
 .home-steps__fire {
     display: flex;
     align-items: center;
-    text-align: center;
     position: relative;
 }
 
@@ -1252,8 +1245,7 @@ button {
 }
 
 .home-join__wrap {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 63px;
 }
 
